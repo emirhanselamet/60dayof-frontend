@@ -9,11 +9,13 @@
 
 .dropdown-container{
     position: relative;
+    display: inline-block;
 }
 .dropdown-container button{
     width: 200px;
     height:50px;
-    display: flex;
+    margin: 5px;
+    display: inline-block;
     align-items: center;
     justify-content:center;
     border-radius: 4px;
@@ -28,26 +30,32 @@
     top: 100%;
     left: 0;
     background:#fff;
-    border: 1px solid #fff;
-    widht:100%;
+    border: 1px solid rgb(184, 52, 52);
+    width:100%;
+    padding: 15px;
     border-radius: 3px;
     opacity: 0;
     visibility: hidden;
     transition: 200ms all;
+    margin: 5px;
 }
 
 .dropdown-container nav ul li a{
-    display:block;
+    display:inline-block;
     padding: 10px 15px;
     font-size: 14px;
     color: rebeccapurple;
+    text-decoration: none;
 }
 
 .dropdown-container nav ul li a:hover{
     background-color: rgba(102,51,153,0.034);
 }
-
-.dropdown-container button:focus + nav{
+.dropdown-container:focus-within button{
+    background-color:orange;
+}
+.dropdown-container:focus-within nav{
     opacity: 1;
     visibility: visible;
+    transform: translateY(5px);
 }
