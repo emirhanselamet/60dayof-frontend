@@ -3,4 +3,4 @@
 
 #Day 2
 #Social Media Components
-<img  src="https://www.hizliresim.com/1bps2cb" style="border-radius:25px;" align="right" >
+[url=https://www.hizliresim.com/1bps2cb][img]https://i.hizliresim.com/1bps2cb.png[/img][/url]
