@@ -5,8 +5,80 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FeedBack Model</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <div class="feedback-modal">
+        <a href="#" class="modal-close-btn">
+            <img src="img/icon-close.png" alt="">
+        </a>
+        <h3>Give FeedBack</h3>
+        <ul>
+            <li>
+                <label class="title">
+                    What do you think of the editing tool?
+                </label>
+                <ul class='emotions'>
+                    <li>
+                        <label>
+                            <input type="radio" name="x" value="1" >
+                            <span class="box">
+                                    <img src="img/icon1.svg" alt="">
+                            </span>
+                        </label>
+                        <label>
+                            <input type="radio" name="x" value="1" >
+                            <span class="box">
+                                    <img src="img/icon2.svg" alt="">
+                            </span>
+                        </label>
+                        <label>
+                            <input type="radio" name="x" value="1" >
+                            <span class="box">
+                                    <img src="img/icon3.svg" alt="">
+                            </span>
+                        </label>
+                        <label>
+                            <input type="radio" name="x" value="1" >
+                            <span class="box">
+                                    <img src="img/icon4.svg" alt="">
+                            </span>
+                        </label>
+                        <label>
+                            <input type="radio" name="x" value="1" >
+                            <span class="box">
+                                    <img src="img/icon5.svg" alt="">
+                            </span>
+                        </label>
+
+                    </li>
+                </ul>
+            </li>
+            <li class="title">
+                Do you have any thoughts you'd like to share ?
+            </li>
+            <textarea class="textarea" name="" id="" cols="30" rows="10"></textarea>
+            </li>
+            <li class="title">
+                May we follow you up on your feedback?
+            </li>
+            <div class="radio-group">
+                <label class="radio">
+                    <input type="radio" name="feedback" value="1"> 
+                    <span class="radio-btn"></span>
+                    <span class="radio-text">Yes</span>
+                </label>
+                <label class="radio">
+                    <input type="radio" name="feedback" value="0"> 
+                    <span class="radio-btn"></span>
+                    <span class="radio-text">No</span>
+                </label>
+            </div>
+            <div class="actions">
+                <button type="submit">Send</button>
+                <button type="button">Cancel</button>
+            </div>
+        </ul>
+    </div>
 </body>
 </html>

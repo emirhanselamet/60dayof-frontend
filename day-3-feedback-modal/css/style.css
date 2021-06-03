@@ -1,0 +1,124 @@
+html,body{
+    height:100%;
+}
+body{
+    background:#EAEDF5;
+}
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+    outline: 0;
+}
+.feedback-modal {
+    width:567px;
+    background:rgb(218, 216, 216);
+    border-radius:15px;
+    padding:105px 80px 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.feedback-modal .modal-close-btn{
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    background:#EAEDF5;
+    width:58px;
+    height:58px;
+    border-radius: 50%;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+}
+.feedback-modal .title{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    padding-bottom: 10px;
+    display: block;
+}
+.feedback-modal ul{
+    padding-top:24px;
+}
+.feedback-modal  ul li {
+    margin-bottom: 25px;
+}
+.feedback-modal .textarea{
+    height: 150px !important;
+    border-radius: 5px;
+    border: 1px solid #A9B2CA;
+    width:100% !important;
+    resize:none;
+    padding:20px;
+    font-size:16px;
+}
+.feedback-modal .textarea:focus{
+    border-color: aqua;
+}
+ul li:last-child{
+    margin-bottom: 0;
+}
+.emotions{
+    display: flex;
+}
+.emotions li label .box {
+    width:76px;
+    height:76px;
+    border-radius: 50%;
+    padding:17px;
+    display: inline-block;
+    align-items: center;
+    justify-content:center;
+}
+.emotions li label input{
+    display:none;
+}
+.emotions li label input:checked + .box{
+    background:#EAEDF5
+}
+.radio-group{
+    display:flex;
+    align-items:center;
+}
+.radio-group .radio{
+    display:flex;
+    align-items:center;
+    margin-right: 55px;
+    cursor: pointer;
+}
+.radio-group .radio-btn{
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    border: 1px solid #2653ce;
+    min-width: 27px;
+    margin-right: 15px;
+    position:relative;
+
+}
+.radio-group input{
+    display: none;
+}
+.actions{
+    display:flex;
+    justify-content:space-between;
+}
+.actions button{
+    width:49%;
+    height:65px;
+    border-radius: 5px;
+    border: 1px solid #A9B2CA;
+    background:transparent;
+    font-size: 18px;
+    color: #717B94;
+    font-weight: 600;
+    cursor: pointer;
+}
+.actions button[type="submit"]{
+    background:#2653ce;
+    color: #fff;
+}
