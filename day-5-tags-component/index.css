@@ -1,0 +1,143 @@
+@import "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&display=swap";
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border: 0;
+  box-sizing: border-box;
+  outline: 0;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+body {
+  background: #f0f3f9;
+  padding: 60px;
+}
+.component {
+  background: #fff;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 20px 25px -15px rgba(9, 13, 92, 0.29);
+  color: #181339;
+}
+.component h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.component p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 23px;
+  margin-bottom: 40px;
+}
+.component--1 {
+  width: 373px;
+}
+.component--1 .actions {
+  display: flex;
+  justify-content: space-between;
+}
+.component--1 .actions button {
+  height: 48px;
+  padding: 0 30px;
+  border: 1px solid #b6c3dc;
+  background: transparent;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.component--1 .actions button.active {
+  background: #ff7a7f;
+  border-color: #ff7a7f;
+  color: #fff;
+}
+.component--2 {
+  width: 300px;
+}
+.component--2 ul li:not(:last-child) {
+  margin-bottom: 25px;
+}
+.component--2 ul li label {
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.component--2 ul li label input {
+  appearance: none;
+  width: 26px;
+  min-width: 26px;
+  height: 26px;
+  border: 1px solid #b6c3dc;
+  border-radius: 50%;
+  margin-right: 15px;
+  position: relative;
+}
+.component--2 ul li label input::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background: #6b5cff;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.7);
+  opacity: 0;
+  transition: 300ms all;
+}
+.component--2 ul li label input:checked::before {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+.component--3 {
+  width: 567px;
+}
+.component--3 .tags {
+  border: 1px solid #b6c3dc;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.component--3 .tags .tag {
+  height: 38px;
+  display: inline-flex;
+  align-items: center;
+  background: #f0f3f9;
+  padding: 0 6px 0 15px;
+  font-size: 14px;
+  border-radius: 5px;
+  transition: 300ms background-color, 300ms box-shadow;
+}
+.component--3 .tags .tag button {
+  width: 26px;
+  height: 26px;
+  background: #fff;
+  border-radius: 50%;
+  min-width: 26px;
+  margin-left: 4px;
+  cursor: pointer;
+  transition: 300ms background-color, 300ms color;
+}
+.component--3 .tags .tag:hover {
+  background: #ffe5e6;
+  box-shadow: 0 13px 10px -10px rgba(146, 0, 6, 0.2);
+}
+.component--3 .tags .tag:hover button {
+  background: #ff7a7f;
+  color: #fff;
+}
+.component--3 .tags input {
+  flex: 1;
+  min-width: 120px;
+  font-size: 14px;
+  padding: 0 10px;
+  height: 38px;
+}
+.divider {
+  height: 50px;
+} /*# sourceMappingURL=index.css.map */
