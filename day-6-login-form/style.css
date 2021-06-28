@@ -1,76 +1,128 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    border: none;
-    text-decoration: none;
-    box-sizing: border-box;
-    -webkit-overflow-scrolling: touch;
-    font-family: 'Poppins', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+  font-family: "Poppins", sans-serif;
 }
 body {
-    background: #F8F8FB;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    -webkit-font-smoothing: antialiased;
+  background: #f8f8fb;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-font-smoothing: antialiased;
 }
-.login .card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0px;
-    background-color: #fff;
-    border-radius: 10px;
-    width:460px;
-    height:584px;
-    box-shadow: 0 12px 24px 0 rgba(#12263F, .05);
-    
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  background-color: #fff;
+  border-radius: 10px;
+  width: 460px;
+  height: 584px;
+  box-shadow: 0 12px 24px 0 rgba(#12263f, 0.05);
 }
-.card header{
-    width:460px;
-    height:112px;
-    left: 0;
-    top: 0;
-    background: rgba(85, 110, 230, 0.25);
-    border-radius: 6px;
-    
+.card header {
+  width: 460px;
+  height: 112px;
+  left: 0;
+  top: 0;
+  background: rgba(85, 110, 230, 0.25);
+  border-radius: 6px;
 }
-.card header h5{
-    color: #556EE6;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 500;
-    font-size:16.25px;
-    line-height: 19px;
-    padding: 24px 285px 8px 24px;
+.card header h5 {
+  color: #556ee6;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16.25px;
+  line-height: 19px;
+  padding: 24px 285px 8px 24px;
 }
-.card header p{
-    font-size: 13px;
-    padding-left: 24px;
+.card header p {
+  font-size: 13px;
+  padding-left: 24px;
 }
-.card header img{
-    float: right;
-    top: 0;
+.card header img {
+  float: right;
+  top: 0;
 }
-.content{
-    padding: 0 28px 24px;
+.content {
+  padding: 0 28px 24px;
 }
 
 .content .avatar {
-    position: relative;
-    top: -24px;
-    margin-bottom: 8px;
-    left: -55px;
+  margin-bottom: 8px;
 }
-.content .avatar img{
-    width:82px;
-    height:82px;
-    border: 3px solid #F8F8FB;
-    border-radius: 50%;
+.content .avatar img {
+  width: 82px;
+  height: 82px;
+  border: 3px solid #f8f8fb;
+  border-radius: 50%;
 }
-ul li{
-    margin-bottom: 18px;
+
+input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 395px;
+  height: 36px;
+  top: 28px;
+  border-radius: 6px;
+  border: 1px solid #ced4da;
+}
+input::placeholder {
+  padding: 5px;
+}
+button {
+  width: 395px;
+  height: 36px;
+  background-color: #556ee6;
+  color: #fff;
+  cursor: pointer;
+}
+button:hover{
+    animation: pulse 1s;
+    box-shadow: 0 0 0 2em rgba(#fff,0);
+}
+label {
+  display: block;
+  color: #495057;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  margin-top: 5px;
+}
+ul li {
+  margin-bottom: 16px;
+}
+ul li:last-child {
+  font-size: 13px;
+}
+
+input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  border: 1px solid #adb5bd;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 300ms background-color, 300ms border-color;
+}
+.forgot {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  color: #74788d;
+  justify-content: center;
+  margin-top: 24px;
+  transition: 300ms color;
 }
